@@ -1,0 +1,466 @@
+/**************** Дополнительные класы */
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --logo-main-color: #2196f3;
+  --logo-secondary-color: #000000;
+  --body-main-color: #ffffff;
+  --body-secondary-color: #2f303a;
+  --body-third-color: #f5f4fa;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", "Verdana", sans-serif;
+  background-color: var(--body-main-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--body-secondary-color);
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.paddings {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* **********************HEADER************************************* */
+
+/**********logo *****************/
+
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  margin-right: 93px;
+
+  color: var(--logo-main-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo-color {
+  color: #000000;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+/************************NAVIGATION */
+
+.main-nav {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--body-secondary-color);
+}
+.menu-item:not(last-child) {
+  margin-right: 50px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--logo-main-color);
+}
+
+a.current {
+  color: var(--logo-main-color);
+}
+
+.menu-link {
+  color: var(--body-secondary-color);
+}
+
+/* *************HEADER-CONTACTS */
+.header-mail {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-right: 50px;
+
+  color: var(--main-text-color);
+}
+
+.header-tel {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+}
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--logo-main-color);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--logo-main-color);
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+/* *********< !--Основная информация на странице (Hero)--> */
+
+/* ******< !--Секция №1 (Section #1)--> */
+
+.main-page {
+  padding-top: 200px;
+  text-align: center;
+}
+.hero-color {
+  color: var(--body-main-color);
+  background: var(--body-secondary-color);
+}
+.hero-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  color: var(--body-main-color);
+  background: var(--body-secondary-color);
+}
+.hero-button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border-radius: 4px;
+  border: 0px;
+
+  display: inline-block;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 107px;
+  padding: 10px 32px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  min-width: 200px;
+  min-height: 50px;
+
+  color: var(--body-main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--logo-main-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+
+/*************************< !--Секция №2 (Section #2)-->*/
+
+.listes {
+  display: flex;
+}
+
+.subtitles {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 94px;
+
+  color: var(--body-secondary-color);
+}
+.subtitles-text:not(last-child) {
+  padding-right: 30px;
+}
+
+.subtitles-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71s;
+  margin-right: 30px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+/* ************< !--Секция №3 (Section #3)--> */
+
+.titles {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/**********< !--Секция №4 (Section #4) --> */
+
+.employees {
+  padding-bottom: 30px;
+}
+
+.name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--body-secondary-color);
+}
+.profession {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+.team {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*********************< !--Подвал (Footer)--> */
+
+.logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.padding-item:not(last-child) {
+  padding-bottom: 9px;
+}
+
+.footer {
+  background: var(--body-secondary-color);
+}
+/* *****************LOGO */
+
+.footer-logo-color {
+  color: var(--body-main-color);
+}
+.location {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--body-main-color);
+}
+
+.footer-nav {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+}
+.footer-nav:hover,
+.footer-nav:focus {
+  color: var(--body-main-color);
+}
+
+/*****************************************************
+****************** PORTFOLIO *************************/
+
+/* *********************HERO BUTTONS */
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.portfolio-nav {
+  margin-right: 8px;
+}
+
+.hero-buttons {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  border-radius: 4px;
+  border: transparent;
+  padding: 6px 22px;
+  width: auto;
+  max-height: 38px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  color: var(--secondary-text-color);
+  background: #f5f4fa;
+}
+.hero-buttons:focus,
+.hero-buttons:hover {
+  background: var(--logo-main-color);
+  color: var(--body-main-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 56px;
+}
+
+.portfolio-card {
+  flex-basis: calc((100%-60px) \2);
+}
+.portfolio-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.portfolio-card-wrapper {
+  padding: 20px 24px;
+}
+/* **************************MAIN CONTENT****** */
+.page-content {
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color);
+  background: var(--body-main-color);
+}
+.mini-titles {
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+  background: var(--body-main-color);
+}
